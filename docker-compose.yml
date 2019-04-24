@@ -1,0 +1,10 @@
+version: "3"
+services:
+  cars:
+    build: ./
+    ports:
+      - "3001:3001"
+  users:
+    build: ./uni_rest-api
+    ports:
+      - "3000:3000"
